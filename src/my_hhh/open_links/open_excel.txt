@@ -1,0 +1,10 @@
+#筛选处理，并用命令行打开网页链接
+_get_to_links(sheet,description,browser_filepath):
+ 
+
+
+######################
+# 给一个excel 文件，然后给某一行的描述，打开对应的链接
+# 给一个browser_filepath，用这个来打开链接，一般是浏览器快捷方式地址
+# ###########################################################
+open_in_browser(excel_filepath,description,browser_filepath):
