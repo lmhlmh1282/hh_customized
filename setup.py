@@ -1,6 +1,6 @@
 from distutils.core import setup
 from setuptools import find_packages
- 
+
 setup(name = 'my_hhh',     # 包名
       version = '1.0',  # 版本号
       description = '',
@@ -9,7 +9,7 @@ setup(name = 'my_hhh',     # 包名
       author_email = '',
       url = '',
       license = '',
-      install_requires = [],
+      
       classifiers = [
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
@@ -30,4 +30,5 @@ setup(name = 'my_hhh',     # 包名
       packages = find_packages('src'),  # 必填
       package_dir = {'':'src'},         # 必填
       include_package_data = True,
+      install_requires=[],
 )
