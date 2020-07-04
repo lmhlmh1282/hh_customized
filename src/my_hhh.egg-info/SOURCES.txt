@@ -7,4 +7,5 @@ src/my_hhh.egg-info/dependency_links.txt
 src/my_hhh.egg-info/top_level.txt
 src/my_hhh/open_links/__init__.py
 src/my_hhh/open_links/open_excel.py
+src/my_hhh/open_links/open_from_mysql.py
 src/my_hhh/open_links/test_print.py
