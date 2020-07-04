@@ -2,12 +2,26 @@ import os
 import sys
 import subprocess
 import pymysql
+from configparser import ConfigParser
+
+cp = ConfigParser()
+cp.read('src\my_hhh\open_links\mysql.conf')
+host = cp.get("mysql", "db_host")
+port = cp.getint("mysql", "db_port")
+user = cp.get("mysql", "db_user")
+password = cp.get("mysql", "db_password")
+database = cp.get("mysql", "db_database")
 
 #在数据库查询并返回一个记录
 def _get_data_from_mysql(description):
     data=None
     # 打开数据库连接
-    db = pymysql.connect("localhost", "root", "lmh123123", "study")
+    db = pymysql.connect(host=host,
+                        port=port,
+                        user=user,
+                        password=password,
+                        db=database
+                     )
     # 使用cursor()方法获取操作游标
     cursor = db.cursor()
     # SQL 查询语句
